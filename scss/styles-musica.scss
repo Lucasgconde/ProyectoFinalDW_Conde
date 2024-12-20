@@ -1,0 +1,153 @@
+// Body
+.custom-body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Navbar
+.custom-navbar {
+  background-color: black !important;
+
+  .navbar-brand {
+    img {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: 16px !important;
+
+    &:hover {
+      color: gray !important;
+    }
+  }
+}
+
+// Sticky Navbar
+.custom-sticky {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1020 !important;
+}
+
+// Main
+main {
+  padding: 5rem 0;
+  flex: 1;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+  }
+}
+
+// Footer
+.custom-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    .list-inline-item {
+      margin: 0 10px;
+
+      a {
+        font-size: 1.5rem;
+        color: white;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+// Card Component
+.custom-card {
+  border: none;
+  background-color: #f8f9fa;
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .album-title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .album-icons {
+    img {
+      width: 40px;
+      margin: 0 5px;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    color: #333;
+    line-height: 1.5;
+  }
+}
+
+// Media Queries para Responsive
+@media (max-width: 768px) {
+  .custom-main {
+    padding: 3rem 0;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .custom-footer {
+    ul {
+      flex-direction: column;
+
+      .list-inline-item {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFA500;
+
+  &:hover {
+    background: #FF8C00;
+  }
+}

@@ -1,0 +1,185 @@
+// Body
+.custom-body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Navbar
+.custom-navbar {
+  background-color: black !important;
+
+  .navbar-brand {
+    img {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: 16px !important;
+
+    &:hover {
+      color: gray !important;
+    }
+  }
+}
+
+// Sticky Navbar
+.custom-sticky {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1020 !important;
+}
+
+// Main
+main {
+  padding: 5rem 0;
+  flex: 1;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+  }
+
+  .table-responsive {
+    .shows-table {
+      width: 100%;
+      margin: auto;
+      border-spacing: 0;
+      text-align: center;
+      background-color: black;
+      border-radius: 10px;
+      overflow: hidden;
+
+      tr {
+        &:nth-child(even) {
+          background-color: #333;
+        }
+      }
+
+      td, th {
+        padding: 1rem;
+        border-bottom: 1px solid #444;
+        color: white;
+
+        &:first-child {
+          text-align: left;
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+
+        button {
+          &.btn-secondary {
+            color: #fff;
+            background-color: #6c757d;
+            border-color: #6c757d;
+            &:disabled {
+              opacity: 0.65;
+            }
+          }
+        }
+      }
+
+      th {
+        background-color: #212529;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// Footer
+.custom-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  .custom-footer-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    .custom-footer-item {
+      margin: 0 10px;
+
+      a {
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: gray;
+        }
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  .custom-footer-text {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #ccc;
+  }
+}
+
+// Media Queries para Responsive
+@media (max-width: 768px) {
+  .custom-main {
+    padding: 3rem 0;
+
+    .custom-heading {
+      font-size: 2rem;
+    }
+
+    .custom-paragraph {
+      font-size: 1.1rem;
+    }
+
+    .custom-content-box {
+      padding: 1rem;
+    }
+  }
+
+  .custom-footer {
+    .custom-footer-list {
+      flex-direction: row;
+
+      .custom-footer-item {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFA500;
+
+  &:hover {
+    background: #FF8C00;
+  }
+}
