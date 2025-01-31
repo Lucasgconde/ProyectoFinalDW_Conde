@@ -1,0 +1,122 @@
+.custom-body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.custom-navbar {
+  background-color: black;
+}
+.custom-navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+.custom-navbar .nav-link {
+  color: white;
+  font-size: 16px;
+}
+.custom-navbar .nav-link:hover {
+  color: gray;
+}
+
+.custom-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.custom-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.custom-footer ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.custom-footer ul .list-inline-item {
+  margin: 0 10px;
+}
+.custom-footer ul .list-inline-item a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.custom-footer ul .list-inline-item a:hover {
+  color: gray;
+}
+
+.custom-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 15px;
+  justify-items: center;
+}
+.custom-gallery-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.custom-gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .custom-main {
+    padding: 3rem 1.5rem;
+  }
+  .custom-main h1 {
+    font-size: 2.5rem;
+  }
+  .custom-gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .custom-footer ul {
+    flex-direction: column;
+  }
+  .custom-footer ul .list-inline-item {
+    margin: 5px 0;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFA500;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8C00;
+}
+
+/*# sourceMappingURL=styles-galeria.css.map */

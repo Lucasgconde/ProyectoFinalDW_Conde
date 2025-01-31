@@ -1,0 +1,163 @@
+// Body
+.custom-body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// Navbar Styles
+.custom-navbar {
+  background-color: black;
+
+  .navbar-brand {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .nav-link {
+    color: white;
+    font-size: 16px;
+
+    &:hover {
+      color: gray;
+    }
+  }
+}
+
+// Sticky Navbar
+.custom-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+// Main
+main {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 100px; // Agrega espacio debajo del formulario
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+// Footer
+.custom-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    .list-inline-item {
+      margin: 0 10px;
+
+      a {
+        font-size: 1.5rem;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+// Form Styles
+.custom-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  
+  .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-submit {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}
+
+// Media Queries para Responsive
+@media (max-width: 768px) {
+  .custom-main {
+    padding: 3rem 1.5rem;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .custom-footer {
+    ul {
+      flex-direction: column;
+
+      .list-inline-item {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFA500;
+
+  &:hover {
+    background: #FF8C00;
+  }
+}

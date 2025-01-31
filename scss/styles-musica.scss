@@ -1,0 +1,147 @@
+// Body
+.custom-body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background-image: url('../img/Fondo3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+// Navbar
+.custom-navbar {
+  background-color: black !important;
+
+  .navbar-brand {
+    img {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
+
+  .nav-link {
+    color: white !important;
+    font-size: 16px !important;
+
+    &:hover {
+      color: gray !important;
+    }
+  }
+}
+
+// Sticky Navbar
+.custom-sticky {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1020 !important;
+}
+
+// Main
+main {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 100px; // Mayor separación del footer
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+// Footer
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0; 
+  min-height: auto;
+  overflow: hidden;
+  margin-top: 50px; // Asegura separación del contenido superior
+}
+
+// Card Component
+.custom-card {
+  border: none;
+  background-color: #f8f9fa;
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .album-title {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .album-icons {
+    img {
+      width: 40px;
+      margin: 0 5px;
+    }
+  }
+
+  p {
+    margin-top: 20px;
+    color: #333;
+    line-height: 1.5;
+  }
+}
+
+// Media Queries para Responsive
+@media (max-width: 768px) {
+  .custom-main {
+    padding: 3rem 0;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+
+  .custom-footer {
+    ul {
+      flex-direction: column;
+
+      .list-inline-item {
+        margin: 5px 0;
+      }
+    }
+  }
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFA500;
+
+  &:hover {
+    background: #FF8C00;
+  }
+}

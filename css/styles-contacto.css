@@ -1,0 +1,136 @@
+.custom-body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.custom-navbar {
+  background-color: black;
+}
+.custom-navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+.custom-navbar .nav-link {
+  color: white;
+  font-size: 16px;
+}
+.custom-navbar .nav-link:hover {
+  color: gray;
+}
+
+.custom-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.custom-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.custom-footer ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.custom-footer ul .list-inline-item {
+  margin: 0 10px;
+}
+.custom-footer ul .list-inline-item a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.custom-footer ul .list-inline-item a:hover {
+  color: gray;
+}
+
+.custom-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.custom-form .form-control {
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  padding: 0.75rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.custom-form .form-control:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.custom-form .form-group {
+  margin-bottom: 1.5rem;
+}
+.custom-form .form-submit {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.custom-form .form-submit:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .custom-main {
+    padding: 3rem 1.5rem;
+  }
+  .custom-main h1 {
+    font-size: 2.5rem;
+  }
+  .custom-footer ul {
+    flex-direction: column;
+  }
+  .custom-footer ul .list-inline-item {
+    margin: 5px 0;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFA500;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8C00;
+}
+
+/*# sourceMappingURL=styles-contacto.css.map */
